@@ -16,7 +16,7 @@ Launch of utility **hw_lecture5_task4.py** was tested on *Ubuntu 22.04.1 LTS* wi
 
 ### Utility discription
 
-The **hw_lecture5_task4.py** provides differential expression analysis based on *confidence interval (CI) method* and *z-test*, i.e. for two cell types. As `**input**`, this script calls **two paths to .csv files** with gene expression and **path for `output` .csv file** with results. *Both input .csv files* should be organized in following way: for *each gene* should be *a column* with its expression *observations in rows*.
+The **hw_lecture5_task4.py** provides differential expression analysis based on *confidence interval (CI) method* and *z-test*, i.e. for two cell types. As `input`, this script calls **two paths to .csv files** with gene expression and **path for `output` .csv file** with results. *Both input .csv files* should be organized in following way: for *each gene* should be *a column* with its expression *observations in rows*.
 
 **Output .csv file** contains statistics results for each gene expression in both cell types:
 
@@ -35,7 +35,7 @@ After .csv files reading, for statistics calculations **hw_lecture5_task4.py** u
 
 - `check_dge_with_ztest()`: calculates z-test value and its p-value for gene expression in both cell types using `scipy.stats.ztest()` and puts them into *z_test_results column* and *z_test_p_values column*, respectively;
 
-- `mean_exp()`: determine difference in mean expression between cell types and puts it into *mean_diff column*
+- `mean_exp()`: determine difference in mean expression between cell types and puts it into *mean_diff column*\
 *Attention! This function subtracts **the mean expression value of the second .csv file from the first .csv file.***
 
 ### Launch
