@@ -33,7 +33,7 @@ After .csv files reading, for statistics calculations **hw_lecture5_task4.py** u
 
 - `check_intervals_intersect()`: checks whether *confidence intervals (CI)* intersect;
 
-- `check_dge_with_ztest()`: calculates z-test value and its p-value for gene expression in both cell types using `scipy.stats.ztest()` and puts them into *z_test_results column* and *z_test_p_values column*, respectively;
+- `check_dge_with_ztest()`: calculates z-test value and its p-value for gene expression in both cell types using `scipy.stats.ztest()` and puts TRUE into *z_test_results column*, if z-test p-value < 0.05 (z-test p-values are in *z_test_p_values column*);
 
 - `mean_exp()`: determine difference in mean expression between cell types and puts it into *mean_diff column*\
 *Attention! This function subtracts **the mean expression value of the second .csv file from the first .csv file.***
