@@ -1,4 +1,4 @@
-# Homework
+# Homework :honeybee:
 
 ## Tool for differential gene expression analysis (v1)
 
@@ -25,27 +25,27 @@ Launch of utility **diff_exp_tool_v1.py** was tested on *Ubuntu 22.04.1 LTS* wit
 
 ### Input
 
-Utility **diff_exp_tool_v1.py** accepts from `std.input` **four** basic parameters and **two** additional parameters. This parameters listed bellow in calling order:
+Utility **diff_exp_tool_v1.py** accepts **four** basic parameters and **two** additional parameters from `std.input`. This parameters listed bellow in calling order:
 
 **1. Basic parameters:**
 
-- path to first .csv file with DEG data (str);
+- **path to first .csv file** with DEG data (str);
 
-- path to second .csv file with DEG data (str);
+- **path to second .csv file** with DEG data (str);
 
-- name for .csv file with results (str);
+- **name for .csv file** with results (str);
 
-- multiple test correction for z-test decision (**yes/no**) (str):
+- **multiple test correction** for z-test decision (**yes/no**) (str):
 
 *Comment:* Enter **'yes'**, if you want to recive multiple test correction for z-test results. In other case, you will recieve results with z-test p-values without correction.
 
 **2. Additional parameters:**
 
-You need to enter following parameters, if you choose to perform multiple test correction for z-test (*'yes'*).
+You need to enter following parameters, if you choose **to perform multiple test correction for z-test** (*'yes'*).
 
-- alpha value for multiple test correction (in format 0.05);
+- **alpha value** for multiple test correction (in format 0.05);
 
-- method for multiple test correction (str):
+- **method** for multiple test correction (str):
 
 *Comment:* this utility uses `statsmodels.stats.multitest.multipletests` for multiple test correction using methods listed in `statsmodels.stats.multitest.multipletests` [documentation](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html).
 
@@ -100,17 +100,17 @@ There are two kinds of **output {name}.csv file** *(with or without testing and 
 
 After .csv files reading, for statistics calculations **diff_exp_tool_v1.py** using some **functions** listed bellow:
 
-- `check_dge_with_ci()`: calculates gene expression *95% confidence intervals (CI)* using `scipy.stats.t.interval()`, calls second function `check_intervals_intersect()` for checking their intersection and puts *TRUE* into *ci_test_results column*, if they intersect. If CI intersects, there no difference in gene expression for given samples;
+- `check_dge_with_ci()`: calculates gene expression *95% confidence intervals (CI)* using `scipy.stats.t.interval()`, calls second function `check_intervals_intersect()` for checking their intersection and puts *TRUE* into **ci_test_results column**, if they intersect. If CI intersects, there no difference in gene expression for given samples;
 
 - `check_intervals_intersect()`: checks whether *confidence intervals (CI)* intersect;
 
-- `check_dge_with_ztest()`: calculates z-test value and its p-value for gene expression using `statsmodels.stats.weightstats()` and puts *TRUE* into *z_test_results column*, if z-test p-value <= 0.05 (z-test p-values are in *z_test_p_values column*);
+- `check_dge_with_ztest()`: calculates z-test value and its p-value for gene expression using `statsmodels.stats.weightstats()` and puts *TRUE* into *z_test_results column*, if z-test p-value <= 0.05 (z-test p-values are in **z_test_p_values column**);
 
-- `mean_exp()`: determines difference in mean expression between given samples and puts value into *mean_diff column*
+- `mean_exp()`: determines difference in mean expression between given samples and puts value into **mean_diff column**
 
 *Attention! This function subtracts **the mean expression value of the second .csv file from the first .csv file.***
 
-- `adjust_pvalue()`: tests results and performs z-test p-value correction for multiple tests using `statsmodels.stats.multitest.multipletests()` with *alpha value* and *method* from `std.input` (for methods check [here](#add_params) or in `statsmodels.stats.multitest.multipletests()` [documentation](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html)).
+- `adjust_pvalue()`: tests results and performs z-test p-value correction for multiple tests using `statsmodels.stats.multitest.multipletests()` with *alpha value* and *method* from `std.input` (for methods check [here](#add_params) or in `statsmodels.stats.multitest.multipletests()` [documentation](https://www.statsmodels.org/dev/generated/statsmodels.stats.multitest.multipletests.html)). Adjusted p-values for z-test are in **z_test_padj column**
 
 ## Launch
 
