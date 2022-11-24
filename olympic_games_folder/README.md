@@ -1,4 +1,4 @@
-# Project1
+# Project1 :bicyclist:
 
 ## Analysis of Olympic Games Athlets' Data for past 120 years
 
@@ -17,15 +17,13 @@ During the Project1, I solved this Tasks:
 There are **two files** in this folder. Here some discriptions of them.
 
 - [README.md](./README.md): discriptions for files in this directory;
-
 - [requirements.txt](./requirements.txt): .txt file with the dependencies;
 
 
 ### Folders
 
 - [data_folder](./data_folder): contains three files - two .csv files with [raw](./data_folder/raw_olympic_data.csv) and [processed](./data_folder/processed_olympic_data.csv) data and .txt file with [descriptions](./data_folder/features_description.txt) for features;
-
-- [report_folder](./report_folder): Project1 Report in three formats - [.html](./report_folder/report_olympic_project.html), [.ipynb](./report_folder/report_olympic_project.ipynb), and [.py](./report_foldeer/report_olympic_project.py)
+- [report_folder](./report_folder): Project1 Report in three formats - [.html](./report_folder/report_olympic_project.html), [.ipynb](./report_folder/report_olympic_project.ipynb), and [.py](./report_folder/report_olympic_project.py)
 
 ### System
 
