@@ -1,11 +1,10 @@
-# Project2 
+# Project2 :construction_worker:
 
 ## Linear models for Boston Housing Data
 
-For **the second Project** I tried to build and chracterize linear regression model to evaluate which features mostly impact on *house prices in Boston in 1970-1980th*. 
-During this educational/practice project python `pandas` module was used to process data. For data visualization `matplotlib` and `seaborn` modules were used. For linear regression modeling and its evaluation `statmodel` module functions were applied. 
+For **the second Project** I tried to build and chracterize linear regression model to evaluate which features mostly impact on *house prices in Boston in 1970-1980th*. During this educational/practice project python `pandas` module was used to process data. For data visualization `matplotlib` and `seaborn` modules were used. For linear regression modeling and its evaluation `statsmodel` module functions were applied. 
 
-Using resulted linear regression model, I have formulated some recommendations for entrepreneurs abd builders in Boston 1970-1980th:
+Using resulted linear regression model, I have formulated some recommendations for entrepreneurs abd builders in Boston in 1970-1980th (maybe for nowadays, too):
 
 - **build as close as possible to the employment centers of the city**;
 
