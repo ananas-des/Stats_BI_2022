@@ -27,7 +27,7 @@ There are **two files** in this folder. Here some discriptions of them.
 
 ### Folders
 
-- [data_folder](./data_folder): contains .csv file with [raw](./data_folder/BostonHousing.csv) and .txt file with [descriptions](./data_folder/features_description.txt) for features;
+- [data_folder](./data_folder): contains .csv file with [data](./data_folder/BostonHousing.csv) and .txt file with [descriptions](./data_folder/features_description.txt) for features;
 - [report_folder](./report_folder): Project2 Report in three formats - [.html](./report_folder/report_boston_housing_project.html), [.ipynb](./report_folder/report_boston_housing_project.ipynb), and [.py](./report_folder/report_boston_housing_project.py)
 
 ### System
