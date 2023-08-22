@@ -1,4 +1,4 @@
-# Homework :honeybee:
+# Homework2 :honeybee:
 
 ## Tool for differential gene expression analysis (v1)
 
